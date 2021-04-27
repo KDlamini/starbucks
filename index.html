@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./public/images/logo.png" class="logo"/></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br/>It's <span>Starbucks</span></h2>
+                <p>MAKE EVERY SIP MORE REWARDING <br/>
+                    Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food, 
+                    get free refills, pay and order with your phone, and more.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="./public/images/frappuccino-drink-chocolate-starbucks.png" alt="" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumbnails">
+            <li>
+                <img 
+                    src="./public/images/thumb1.png" 
+                    onclick="imageSlider('./public/images/frappuccino-drink-chocolate-starbucks.png');
+                            changeCircleColor('#017143')"
+                >
+            </li>
+            <li>
+                <img 
+                    src="./public/images/thumb2.png" 
+                    onclick="imageSlider('./public/images/tea-coffee-drink-starbucks-latte.png');
+                            changeCircleColor('#eb7495')"
+                >
+            </li>
+            <li>
+                <img 
+                    src="./public/images/thumb3.png" 
+                    onclick="imageSlider('./public/images/frappuccino-drink-latte-starbucks-unicorn.png');
+                            changeCircleColor('#d752b1')"
+                >
+            </li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/Starbucks/" target="_blank"><img src="./public/images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/Starbucks" target="_blank"><img src="./public/images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/starbucks_sa" target="_blank"><img src="./public/images/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
